@@ -32,6 +32,10 @@
   status: pass
 
 - summary: |
+    Просмотр товара в корзине
+  status: pass
+  
+- summary: |
     Удаление товара из корзины
   status: pass
 
