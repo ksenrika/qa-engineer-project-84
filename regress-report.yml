@@ -1,0 +1,48 @@
+---
+test-cases:
+  - summary: |
+      Успешная фильтрация товаров по наличию
+    status: pass 
+
+  - summary: |
+      Успешная фильтрация товаров по наличию
+    status: fail
+
+bugreports:
+  - summary: |
+      Не работет фильтрация товаров по наличию
+    environment: |
+      Firefox   142.0.1 (64-битная)
+      Windows 10
+    steps-to-reproduce: |
+      1. Зайти на сайт магазина https://products-store-v2-ru.hexlet.app/
+      2. В форме фильтрации убрать галку со статуса In Stock
+    expected-result: |
+      При удалении галки с кнопки In stock в каталоге показываюся товары, которых нет в наличии
+    actual-result: |
+      При удалении галки с кнопки In stock в каталоге показываюся товары, которые есть в наличии
+
+test-cases:
+  - summary: |
+      Успешная фильтрация товаров по цене
+    status: pass 
+
+  - summary: |
+      Успешная фильтрация товаров по цене
+    status: fail
+
+bugreports:
+  - summary: |
+      Некорректно работет фильтрация товаров по цене
+    environment: |
+      Firefox   142.0.1 (64-битная)
+      Windows 10
+    steps-to-reproduce: |
+      1. Зайти на сайт магазина https://products-store-v2-ru.hexlet.app/
+      2. В форме фильтрации в разделе Price установить From: 0, To: 0
+    expected-result: |
+      При установлении в Price From: 0, To: 0, никакие товары не должны показываться 
+    actual-result: |
+      При установлении в Price From: 0, To: 0, товары в каталоге не фильтруются и все также видны в каталоге
+
+
