@@ -47,17 +47,17 @@ test-cases:
 bugreports:
   - summary: |
       Не корректно работет фильтрация товаров по брендам
-    environment: |
+  environment: |
       Firefox   142.0.1 (64-битная)
       Windows 10
-    steps-to-reproduce: |
+  steps-to-reproduce: |
       1. Зайти на сайт магазина https://products-store-v2-ru.hexlet.app/
       2. В форме фильтрации выбрать категорию - beauty
       3. В форме фильтрации выбрать бренд - Furniture Co.
-    expected-result: |
+  expected-result: |
       Фильтр работает корректо, если, например, выбрана категория - beauty, а бренд - Furniture Co., 
       то выводится сообщение, что товаров, удволетворяющих такой фильтрации в каталоге не найдено
-    actual-result: |
+  actual-result: |
       Фильтр перестаёт работать корректно, когда категория и бренд из разных сфер, показываются товары вообще не подходящие под данные фильтры
       (т.е., например, категория - beauty, а бренд - Furniture Co. [мебель])
 
@@ -74,15 +74,15 @@ test-cases:
 bugreports:
   - summary: |
       Не работет фильтрация товаров по наличию
-    environment: |
+  environment: |
       Firefox   142.0.1 (64-битная)
       Windows 10
-    steps-to-reproduce: |
+  steps-to-reproduce: |
       1. Зайти на сайт магазина https://products-store-v2-ru.hexlet.app/
       2. В форме фильтрации убрать галку со статуса In Stock
-    expected-result: |
+  expected-result: |
       При удалении галки с кнопки In stock в каталоге показываюся товары, которых нет в наличии
-    actual-result: |
+  actual-result: |
       При удалении галки с кнопки In stock в каталоге показываюся товары, которые есть в наличии
 
 
@@ -98,15 +98,15 @@ test-cases:
 bugreports:
   - summary: |
       Некорректно работет фильтрация товаров по цене
-    environment: |
+  environment: |
       Firefox   142.0.1 (64-битная)
       Windows 10
-    steps-to-reproduce: |
+  steps-to-reproduce: |
       1. Зайти на сайт магазина https://products-store-v2-ru.hexlet.app/
       2. В форме фильтрации в разделе Price установить From: 0, To: 0 
-    expected-result: |
+  expected-result: |
       При установлении в Price From: 0, To: 0, никакие товары не должны показываться, должно выводится сообщение, что таких товаров не найдено 
-    actual-result: |
+  actual-result: |
       При установлении в Price From: 0, To: 0, товары в каталоге не фильтруются и все также видны в каталоге
 
 
@@ -122,15 +122,15 @@ test-cases:
 bugreports:
   - summary: |
       Некорректно работет фильтрация товаров по цене
-    environment: |
+  environment: |
       Firefox   142.0.1 (64-битная)
       Windows 10
-    steps-to-reproduce: |
+  steps-to-reproduce: |
       1. Зайти на сайт магазина https://products-store-v2-ru.hexlet.app/
       2. В форме фильтрации в разделе Price установить From: -8, To: -3 
-    expected-result: |
+  expected-result: |
       При установлении в Price From: -8, To: -3 , никакие товары не должны показываться, должно выводится сообщение, что таких товаров не найдено 
-    actual-result: |
+  actual-result: |
       При установлении в Price From: -8, To: -3, товары в каталоге не фильтруются и все также видны в каталоге
 
 test-cases:
@@ -201,15 +201,78 @@ test-cases:
 bugreports:
   - summary: |
       Некорректно работет переключение языка интерфейса с английского на русский
-    environment: |
+  environment: |
       Firefox   142.0.1 (64-битная)
       Windows 10
-    steps-to-reproduce: |
+  steps-to-reproduce: |
       1. Зайти на сайт магазина https://products-store-v2-ru.hexlet.app/
       2. На шапке сайта поменять язык с английского на русский
       3. Зайти в корзину
       4. Выйти из корзины на старинцу католога, нажав на кнопку Магазин
-    expected-result: |
+  expected-result: |
       При переключении языка с английского на русский, язык должен вседа отсавться выбранным, даже при переходе между страницами сайта
-    actual-result: |
+  actual-result: |
       При переключении языка с английского на русский, язык меняется обратно на английский при сменен страницы корзины на страницу каталога
+
+
+test-cases:
+  - summary: |
+      Корректное отображение интерфейса на мобильном устройстве
+    status: fail 
+
+  - summary: |
+      Корректное отображение интерфейса на мобильном устройстве
+    status: fail
+
+bugreports:
+  - summary: |
+      Некорректно работет отображение интерфейса на мобильном устройстве (iPhone 11 PRO Max IOS 14.6)
+  environment: |
+      Firefox   142.0.1 (64-битная)
+      Windows 10
+  steps-to-reproduce: |
+      1. Зайти на сайт магазина https://products-store-v2-ru.hexlet.app/
+      2. Зайти в Devtools и выбрать мобильную версию (на примере iPhone 11 PRO Max IOS 14.6)
+      3. Прокрутить каталог товаров до самого конца страницы
+  expected-result: |
+      При переключении на мобильную версию окно с фильтрами должно находиться в самом начале каталога
+  actual-result: |
+      При переключении на мобильную версию окно с фильтрами преместилось в самый низ каталога, что усложняе пользование сайтом с мобильного устройства
+
+test-cases:
+  - summary: |
+      Сохранение состояния корзины после обновления страницы
+    status: pass 
+
+  - summary: |
+      Сохранение состояния корзины после обновления страницы 
+    status: pass
+
+bugreports: []
+
+
+test-cases:
+  - summary: |
+     После оформления заказа не появляется форма оплаты
+    status: fail 
+
+  - summary: |
+      После оформления заказа не появляется форма оплаты
+    status: fail
+
+bugreports:
+  - summary: |
+      После оформления заказа не появляется форма оплаты
+  environment: |
+      Firefox   142.0.1 (64-битная)
+      Windows 10
+  steps-to-reproduce: |
+      1. Зайти на сайт магазина https://products-store-v2-ru.hexlet.app/
+      2. Выбрать товар Ice Cream и добавить его в корзину
+      3. Нажать на кнопу Cart и зайти в корзину
+      4. Нажать на кнопку Checkout и оформить заказ
+      5. Получено сообщение, что заказ оформлен, видна общая стоимость корзины, но форма для оплы не появилась
+  expected-result: |
+      После оформления заказа, должен быть произведен переход на страницу оплаты
+  actual-result: |
+      После оформления заказа, появляется только сообщение о том, что заказ оформлен
