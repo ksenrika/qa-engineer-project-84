@@ -1,134 +1,134 @@
 ---
 - summary: |
     Отображение интерфейса на мобильном устройстве не корректно
-  environment: |
+environment: |
     Firefox   142.0.1 (64-битная)
     Windows 10
-  steps-to-reproduce: |
+steps-to-reproduce: |
     1. Зайти на сайт магазина https://products-store-ru.hexlet.app
     2. Зайти в Devtools и выбрать мобильную версию (на примере iPhone 11 PRO Max IOS 14.6)
     3. Нажать несколько раз (3 раза) на кнопку Next
     4. Лента товаров скатилась вниз страницы, выйдя из поля видимости мобильного устройсва
-  expected-result: |
+expected-result: |
     При нажатии кнопки Next лента товаров должна находится сверху, в поле видимости мобильного устройства
-  actual-result: |
+actual-result: |
     При третьем нажаитии и также в дальнейших нажатиях на кнопку Next, в мобильной версии iPhone 11 PRO Max IOS 14.6, лента товаров съезжяет вниз
 
 - summary: |
     После оформления заказа не появляется форма оплаты
-  environment: |
+environment: |
     Firefox   142.0.1 (64-битная)
     Windows 10
-  steps-to-reproduce: |
+steps-to-reproduce: |
     1. Зайти на сайт магазина https://products-store-ru.hexlet.app
     2. Выбрать товар Ice Cream и добавить его в корзину
     3. Нажать на кнопу Cart и зайти в корзину
     4. Нажать на кнопку Checkout и оформить заказ
     5. Получено сообщение, что заказ оформлен, видна общая стоимость корзины, но форма для оплы не появилась
-  expected-result: |
+expected-result: |
     После оформления заказа, должен быть произведен переход на страницу оплаты
-  actual-result: |
+actual-result: |
     После оформления заказа, появляется только сообщение о том, что заказ оформлен
 
 - summary: |
     После появления окна оформления заказа нет возможности вернуться в корзину через нажатие на крестик
-  environment: |
+environment: |
     Firefox   142.0.1 (64-битная)
     Windows 10
-  steps-to-reproduce: |
+steps-to-reproduce: |
     1. Зайти на сайт магазина https://products-store-ru.hexlet.app
-    2. Выбрать любой товар и добавить его в корзину
+    2. Выбрать товар Ice Cream и добавить его в корзину
     3. Нажать на кнопу Cart и зайти в корзину
     4. Нажать на кнопку Checkout и оформить заказ
     5. Получено сообщение, что заказ оформлен, выйти из этого окна при помощи нажатия на кнопку крестика
-  expected-result: |
+expected-result: |
     После оформления заказа, можно вернустья обратно на страницу корзины, нажав на кнопку крестика
-  actual-result: |
-    При нажатии на кнопку крестика в окне оформления заказа, должен рпоизводиться возврат на страницу корзины
+actual-result: |
+    При нажатии на кнопку крестика в окне оформления заказа ничего не происходит
 
 - summary: |
     Отображение интерфейса на мобильном устройстве не корректно
-  environment: |
+environment: |
     Firefox   142.0.1 (64-битная)
     Windows 10
-  steps-to-reproduce: |
+steps-to-reproduce: |
     1. Зайти на сайт магазина https://products-store-ru.hexlet.app
     2. Зайти в Devtools и выбрать мобильную версию (на примере iPhone 11 PRO Max IOS 14.6)
     3. Нажать несколько раз (3 раза) на кнопку Next
     4. Лента товаров скатилась вниз страницы, выйдя из поля видимости мобильного устройсва
-  expected-result: |
+expected-result: |
     При нажатии кнопки Next лента товаров должна находится сверху, в поле видимости мобильного устройства
-  actual-result: |
+actual-result: |
     При третьем нажаитии и также в дальнейших нажатиях на кнопку Next, в мобильной версии iPhone 11 PRO Max IOS 14.6, лента товаров съезжяет вниз
 
 - summary: |
     В шапке сайта при выборе языка, у English не отображается картинка с флагом
-  environment: |
+environment: |
     Firefox   142.0.1 (64-битная)
     Windows 10
-  steps-to-reproduce: |
+steps-to-reproduce: |
     1. Зайти на сайт магазина https://products-store-ru.hexlet.app
     2. Нажать на кнопку Language
-  expected-result: |
+expected-result: |
     В шапке сайта при выборе языка, у English отображается картинка с флагом
-  actual-result: |
+actual-result: |
     В шапке сайта при нажати кнопки Language и при выборе языка, у English не отображается картинка с флагом
 
 - summary: |
     При нажатии на кнопку Next, категория в фильтре не сбрасывается
-  environment: |
+environment: |
     Firefox   142.0.1 (64-битная)
     Windows 10
-  steps-to-reproduce: |
+steps-to-reproduce: |
     1. Зайти на сайт магазина https://products-store-ru.hexlet.app
     2. Выбрать категорию из списка (beauty)
     3. Нажать на кнопку Next
-  expected-result: |
+expected-result: |
     При нажатии на кнопку Next, категория beauty в фильтре должна сброситься, чтобы выбрать уже новую категорию
-  actual-result: |
+actual-result: |
     При нажатии на кнопку Next, категория beauty в фильтре не сбрасывается
 
 - summary: |
     В каталоге товаров не выводится рейтинг товара
-  environment: |
+environment: |
     Firefox   142.0.1 (64-битная)
     Windows 10
-  steps-to-reproduce: |
+steps-to-reproduce: |
     1. Зайти на сайт магазина https://products-store-ru.hexlet.app
-  expected-result: |
+expected-result: |
     В каталоге товаров должен выводится рейтинг товара
-  actual-result: |
+actual-result: |
     При открытии каталога товаров, рейтинг товара не отображается
 
 - summary: |
     Товар добавляется в корзину, хотя его нет в наличии
-  environment: |
+environment: |
     Firefox   142.0.1 (64-битная)
     Windows 10
-  steps-to-reproduce: |
+steps-to-reproduce: |
     1. Зайти на сайт магазина https://products-store-ru.hexlet.app
     2. В фильтре убрать галку со значения In stock
     3. Выбрать товар Sportbike Motorcycle и нажать на его карточку
     4. Нажать на кнопку Add to cart
-  expected-result: |
+expected-result: |
     Товар Sportbike Motorcycle, котрого нет в налчии, не будет добавлен в корзину
-  actual-result: |
+actual-result: |
     Товар Sportbike Motorcycle, котрого нет в налчии, добавлен в корзину
 
 - summary: |
     Заказ можно оформить, хотя в корзине лежит товар, которого нет в наличии
-  environment: |
+environment: |
     Firefox   142.0.1 (64-битная)
     Windows 10
-  steps-to-reproduce: |
+steps-to-reproduce: |
     1. Зайти на сайт магазина https://products-store-ru.hexlet.app
     2. В фильтре убрать галку со значения In stock
     3. Выбрать товар Sportbike Motorcycle и нажать на его карточку
     4. Нажать на кнопку Add to cart
     5. Нажать на кнопку Checkout
-  expected-result: |
+expected-result: |
     Заказ товара Sportbike Motorcycle, который лежить в корзине, но котрого нет в налчии, не будет оформлен
-  actual-result: |
+actual-result: |
     Заказ товара Sportbike Motorcycle, который лежить в корзине, но котрого нет в налчии, будет оформлен
 
 
