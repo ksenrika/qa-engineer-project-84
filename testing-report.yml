@@ -13,7 +13,7 @@
 
 - summary: |
     Фильтрация товаров по бренду
-  status: fail
+  status: pass
 
 - summary: |
     Фильтрация товаров по наличию
