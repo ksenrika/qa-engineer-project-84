@@ -86,21 +86,6 @@
     При открытии каталога товаров, рейтинг товара не отображается
 
 - summary: |
-    Товар добавляется в корзину, хотя его нет в наличии
-  environment: |
-    Firefox   142.0.1 (64-битная)
-    Windows 10
-  steps-to-reproduce: |
-    1. Зайти на сайт магазина https://products-store-ru.hexlet.app
-    2. В фильтре убрать галку со значения In stock
-    3. Выбрать товар Sportbike Motorcycle и нажать на его карточку
-    4. Нажать на кнопку Add to cart
-  expected-result: |
-    Товар Sportbike Motorcycle, котрого нет в налчии, не будет добавлен в корзину
-  actual-result: |
-    Товар Sportbike Motorcycle, котрого нет в налчии, добавлен в корзину
-
-- summary: |
     В корзину можно положить товар, которого нет в наличии
   environment: |
     Firefox   142.0.1 (64-битная)
