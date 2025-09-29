@@ -139,7 +139,7 @@
   test-data: |
     Product = Sports Sneakers Off White & Red
   steps:
-    - На карточке товара Sports Sneakers Off White & Red кликаем на его название или изображение
+    - На карточке товара Sports Sneakers Off White & Red кликаем на его изображение
   expected-result: |
     Происходит переход на страницу товара Sports Sneakers Off White & Red без перезагрузки страницы.
     На странице отображается: подробное описание, название, рейтинг, цена со скидкой и без неё, кнопка Добавить в корзину
