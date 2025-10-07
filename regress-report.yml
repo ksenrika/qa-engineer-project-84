@@ -45,9 +45,9 @@ test-cases:
   - summary: |
       Переключение языка интерфейса с русского на английский
     status: fail
-  - summary: | # New !!!
+  - summary: | # New 
       Переключение языка интерфейса с английского на русский
-    status: fail
+    status: pass
   - summary: |
       Корректное отображение интерфейса на мобильном устройстве
     status: fail
@@ -98,7 +98,7 @@ test-cases:
     status: pass
   - summary: | # New
       Проверка отправки запроса на сервер при переходе на карточку товара 
-    status: pass
+    status: fail
   - summary: | # New
       Проверка отправки запроса на сервер при выборе категории товаров 
     status: fail
@@ -120,6 +120,9 @@ test-cases:
   - summary: | # New !!!
       Проверка отправки запроса при фильтрации по диапазону цен
     status: fail
+  - summary: |
+      Успешный просмотр товаров в магазине
+    status: pass
 
     
 bugreports:
@@ -136,6 +139,7 @@ bugreports:
       Выводится сообщение, что такие товары не найдены
     actual-result: |
       При удалении галки с кнопки In stock в каталоге показываюся товары, которые есть в наличии
+      https://github.com/ksenrika/qa-engineer-project-84/blob/main/Screenshots/regress-report/bug_regress8.png
 
   - summary: |
       Некорректно работет фильтрация товаров по цене
@@ -149,6 +153,7 @@ bugreports:
       При установлении в Price From: 0, To: 0, никакие товары не должны показываться, должно выводится сообщение, что таких товаров не найдено 
     actual-result: |
       При установлении в Price From: 0, To: 0, товары в каталоге не фильтруются и все также видны в каталоге
+      https://github.com/ksenrika/qa-engineer-project-84/blob/main/Screenshots/regress-report/bug_regress9.png
 
   - summary: |
       Некорректно работет фильтрация товаров по цене
@@ -162,6 +167,7 @@ bugreports:
       При установлении в Price From: -8, To: -3 , никакие товары не должны показываться, должно выводится сообщение, что таких товаров не найдено 
     actual-result: |
       При установлении в Price From: -8, To: -3, товары в каталоге не фильтруются и все также видны в каталоге
+      https://github.com/ksenrika/qa-engineer-project-84/blob/main/Screenshots/regress-report/bug_regress10.png
 
   - summary: |
       Некорректно работет переключение языка интерфейса с английского на русский
@@ -177,6 +183,8 @@ bugreports:
       При переключении языка с английского на русский, язык должен вседа отсавться выбранным, даже при переходе между страницами сайта
     actual-result: |
       При переключении языка с английского на русский, язык меняется обратно на английский при сменен страницы корзины на страницу каталога
+      https://github.com/ksenrika/qa-engineer-project-84/blob/main/Screenshots/regress-report/bug_regress11-1.png
+      https://github.com/ksenrika/qa-engineer-project-84/blob/main/Screenshots/regress-report/bug_regress11-2.png
 
   - summary: |
       В каталоге отстутсвует автоматичесий перенос верх страиницы при нажатии кнопки Next внизу страницы
@@ -185,11 +193,13 @@ bugreports:
       Windows 10
     steps-to-reproduce: |
       1. Зайти на сайт магазина https://products-store-v2-ru.hexlet.app/
+      2. Пролистать ленту товаров до самого низа
       2. Нажать на кнопку Next
     expected-result: |
       После нажатия кнопки Next и перехода на следующюю страницу, пользователя должно автоматически перенести в верх каталога
     actual-result: |
-      После нажатия кнопки Next и перехода на следующюю страницу, пользователь оказывается внизу страницы каталога
+      После нажатия кнопки Next в нижей части каталога и перехода на следующюю страницу, пользователь остается внизу страницы каталога
+      https://github.com/ksenrika/qa-engineer-project-84/blob/main/Screenshots/regress-report/bug_regress12.png
 
   - summary: |
       При переходе из корзины на страницу магазина путем нажатия кнопки Store, происходит перезагрузка страницы
@@ -204,6 +214,9 @@ bugreports:
       После нажатия кнопки Store и перехода на страницу каталога, должно было произойти кеширование данных
     actual-result: |
       После нажатия кнопки Store и перехода на страницу каталога, произошла перезагрузка страницы
+      https://github.com/ksenrika/qa-engineer-project-84/blob/main/Screenshots/bug_regress3.png
+      https://github.com/ksenrika/qa-engineer-project-84/blob/main/Screenshots/bug_regress3-1.png
+      https://github.com/ksenrika/qa-engineer-project-84/blob/main/Screenshots/bug_regress3-2.png
 
   - summary: |
       Не корректно работет фильтрация товаров по брендам
@@ -220,6 +233,7 @@ bugreports:
     actual-result: |
       Фильтр перестаёт работать корректно, когда категория и бренд из разных сфер, показываются товары вообще не подходящие под данные фильтры. 
       Например, категория - beauty, а бренд - Furniture Co. - мебель.
+      https://github.com/ksenrika/qa-engineer-project-84/blob/main/Screenshots/regress-report/bug_regress13.png
 
   - summary: |
       В каталоге при применении фильтра исчезает кнопка Next для перехода на следующую страницу 
@@ -232,7 +246,9 @@ bugreports:
     expected-result: |
       После выбора катеогрии beauty в фильтре кнопка Next не исчезает, есть возможность перейти на следующую страницу без перезагрузки 
     actual-result: |
-      После выбора катеогрии beauty в фильтре исчезает кнопка Next, преейти на следующую страницу можно только презагрузив страницу
+      После выбора катеогрии beauty в фильтре, исчезает кнопка Next, перейти на следующую страницу можно только презагрузив страницу
+      https://github.com/ksenrika/qa-engineer-project-84/blob/main/Screenshots/regress-report/bug_regress14.png
+      
 
   - summary: |
       Производится поиск товара по несуществующему ключевому слову
@@ -246,6 +262,7 @@ bugreports:
       На странице католога выводится, что такого товара не найдено
     actual-result: |
       Производится поиск товара при вводе несуществующего ключегого слова smthnotfound
+      https://github.com/ksenrika/qa-engineer-project-84/blob/main/Screenshots/bug_regress5.png
 
   - summary: |
       Выполняется фильтрация товаров по цене с невалидным диапазоном
@@ -260,21 +277,7 @@ bugreports:
       Выводится сообщение об ошибке или сообщение, что таких товаров не найдено 
     actual-result: |
       Производится поиск товара c данным невалидным ценовым диапазоном
-
-  - summary: |
-      Некорректно работет переключение языка интерфейса с русского на английский
-    environment: |
-      Firefox   142.0.1 (64-битная)
-      Windows 10
-    steps-to-reproduce: |
-      1. Зайти на сайт магазина https://products-store-v2-ru.hexlet.app/
-      2. На шапке сайта поменять язык с русского на английский
-      3. Зайти в корзину
-      4. Выйти из корзины на старинцу католога, нажав на кнопку Магазин
-    expected-result: |
-      При переключении языка с русского на английский, язык должен вседа отсавться выбранным, даже при переходе между страницами сайта
-    actual-result: |
-      При переключении языка с русского на английский, язык меняется обратно на русский при сменен страницы корзины на страницу каталога
+      https://github.com/ksenrika/qa-engineer-project-84/blob/main/Screenshots/bug_regress7.png
 
   - summary: |
       Не отпраляется запрос при фильтрации по наличию товара
@@ -289,6 +292,7 @@ bugreports:
       В Network должен отобразиться GET-запрос с товарами, которых нет в наличии и статусом 200
     actual-result: |
       В Network не отображается GET-запрос с товарами, которых нет в наличии. Сам фильтр тоже не работает.
+      https://github.com/ksenrika/qa-engineer-project-84/blob/main/Screenshots/regress-report/bug_regress15.png
 
   - summary: |
       Не отпраляется запрос при фильтрации по диапазону цен
@@ -303,4 +307,5 @@ bugreports:
     expected-result: |
       В Network должен отобразиться GET-запрос с отфильтрованными товарами и статусом 200
     actual-result: |
-      В Network не отображается GET-запрос с отфильтрованными товарами, а только кешированные товары, не подходящие под данный диапазон. 
+      В Network не отображается GET-запрос с отфильтрованными товарами, а только кешированные товары, не подходящие под данный диапазон
+      https://github.com/ksenrika/qa-engineer-project-84/blob/main/Screenshots/bug_regress6.png
