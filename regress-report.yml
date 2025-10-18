@@ -187,7 +187,7 @@ bugreports:
       https://github.com/ksenrika/qa-engineer-project-84/blob/main/Screenshots/regress-report/bug_regress11-2.png
 
   - summary: |
-      В каталоге отстутсвует автоматичесий перенос верх страиницы при нажатии кнопки Next внизу страницы
+      В каталоге отсутствует автоматичесий перенос верх страиницы при нажатии кнопки Next внизу страницы
     environment: |
       Firefox   142.0.1 (64-битная)
       Windows 10
