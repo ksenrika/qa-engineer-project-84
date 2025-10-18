@@ -301,7 +301,7 @@
     https://github.com/ksenrika/qa-engineer-project-84/blob/main/Screenshots/bugreports/bug17-1.png
 
 - summary: | # New
-    При фильтрация товаров по скидочной цене, производится фильтр по цене без скидки
+    При фильтрация товаров по скидочной цене, производится фильтрация по цене без скидки
   environment: |
     Firefox   142.0.1 (64-битная)
     Windows 10
@@ -313,8 +313,8 @@
   expected-result: |
     Пользователь должен увидеть товары, попадающие в диапазон скидочной цены 
   actual-result: |
-    При выборе минимальной цены = 100 и максимальной = 250, показывается товар Chanel Coco Noir Eau De,
-    но если проверить фильтрацию именно по скидочной цене (от 100 до 109), то она не проходит,
+    При выборе минимальной цены = 100 и максимальной = 250, в каталоге виден товар Chanel Coco Noir Eau De,
+    но если проверить фильтрацию именно по скидочной цене (от 100 до 109), то она не проходит, товар прпадает из каталога,
     а с фильтрацией по обычной цене (от 100 до 130) проходит
     https://github.com/ksenrika/qa-engineer-project-84/blob/main/Screenshots/bugreports/bug21.png
     https://github.com/ksenrika/qa-engineer-project-84/blob/main/Screenshots/bugreports/bug21_1.png
