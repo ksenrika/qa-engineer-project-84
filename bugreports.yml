@@ -13,7 +13,7 @@
     При нажатии кнопки Next лента товаров должна находится сверху, в поле видимости мобильного устройства
   actual-result: |
     При третьем нажаитии и также в дальнейших нажатиях на кнопку Next, в мобильной версии iPhone 11 PRO Max IOS 14.6, лента товаров съезжяет вниз
-    https://github.com/ksenrika/qa-engineer-project-84/blob/main/Screenshots/bug14.png
+    https://github.com/ksenrika/qa-engineer-project-84/blob/main/Screenshots/bugreports/bug14.png
     
 - summary: |
     После оформления заказа не появляется форма оплаты
@@ -30,7 +30,7 @@
     После оформления заказа, должен быть произведен переход на страницу оплаты
   actual-result: |
     После оформления заказа, появляется только сообщение о том, что заказ оформлен
-    https://github.com/ksenrika/qa-engineer-project-84/blob/main/Screenshots/bug15.png
+    https://github.com/ksenrika/qa-engineer-project-84/blob/main/Screenshots/bugreports/bug15.png
 
 - summary: |
     После появления окна оформления заказа нет возможности вернуться в корзину через нажатие на крестик
@@ -47,7 +47,7 @@
     После оформления заказа, можно вернустья обратно на страницу корзины, нажав на кнопку крестика
   actual-result: |
     При нажатии на кнопку крестика в окне оформления заказа ничего не происходит
-    https://github.com/ksenrika/qa-engineer-project-84/blob/main/Screenshots/bug16.png
+    https://github.com/ksenrika/qa-engineer-project-84/blob/main/Screenshots/bugreports/bug16.png
     
 - summary: |
     В шапке сайта при выборе языка, у English не отображается картинка с флагом
@@ -61,7 +61,7 @@
     В шапке сайта при выборе языка, у English отображается картинка с флагом
   actual-result: |
     В шапке сайта при нажати кнопки Language и при выборе языка, у English не отображается картинка с флагом
-    https://github.com/ksenrika/qa-engineer-project-84/blob/main/Screenshots/screen4.png
+    https://github.com/ksenrika/qa-engineer-project-84/blob/main/Screenshots/bugreports/screen4.png
 
 - summary: |
     При нажатии на кнопку Next, категория в фильтре не сбрасывается
@@ -76,8 +76,8 @@
     При нажатии на кнопку Next, категория beauty в фильтре должна сброситься, чтобы выбрать уже новую категорию
   actual-result: |
     При нажатии на кнопку Next, категория beauty в фильтре не сбрасывается
-    https://github.com/ksenrika/qa-engineer-project-84/blob/main/Screenshots/bug17.png
-    https://github.com/ksenrika/qa-engineer-project-84/blob/main/Screenshots/bug17-1.png
+    https://github.com/ksenrika/qa-engineer-project-84/blob/main/Screenshots/bugreports/bug17.png
+    https://github.com/ksenrika/qa-engineer-project-84/blob/main/Screenshots/bugreports/bug17-1.png
 
 - summary: |
     В каталоге товаров не выводится рейтинг товара
@@ -90,7 +90,7 @@
     В каталоге товаров должен выводится рейтинг товара
   actual-result: |
     При открытии каталога товаров, рейтинг товара не отображается
-    https://github.com/ksenrika/qa-engineer-project-84/blob/main/Screenshots/bug3.png
+    https://github.com/ksenrika/qa-engineer-project-84/blob/main/Screenshots/bugreports/bug3.png
 
 - summary: |
     В корзину можно положить товар, которого нет в наличии
@@ -107,7 +107,7 @@
     Выводится сообщение, что товар отсутствует
   actual-result: |
     Товар Sportbike Motorcycle, которого нет в наличии, добавился в корзину
-    https://github.com/ksenrika/qa-engineer-project-84/blob/main/Screenshots/bug18.png
+    https://github.com/ksenrika/qa-engineer-project-84/blob/main/Screenshots/bugreports/bug18.png
 
 - summary: |
     Заказ можно оформить, хотя в корзине лежит товар, которого нет в наличии
@@ -124,7 +124,7 @@
     Заказ товара Sportbike Motorcycle, который лежить в корзине, но котрого нет в налчии, не будет оформлен
   actual-result: |
     Заказ товара Sportbike Motorcycle, который лежить в корзине, но котрого нет в налчии, будет оформлен
-    https://github.com/ksenrika/qa-engineer-project-84/blob/main/Screenshots/bug19.png
+    https://github.com/ksenrika/qa-engineer-project-84/blob/main/Screenshots/bugreports/bug19.png
 
 - summary: | # New
     В каталоге выводятся товары при фильтрации товаров по цене с некорректными символами 
@@ -140,7 +140,7 @@
   actual-result: |
     При введении словесных значений, выводится сообщение о том, что надо ввести число, но
     на странице каталога всё равно выводятся все товары
-    https://github.com/ksenrika/qa-engineer-project-84/blob/main/Screenshots/bug5.png
+    https://github.com/ksenrika/qa-engineer-project-84/blob/main/Screenshots/bugreports/bug5.png
 
 - summary: | # New
     Не выполняется переход по хештегу товара на страницу категории хештега
@@ -156,7 +156,7 @@
     Пользователь успешно перешел на страницу категории beauty
   actual-result: |
     При нажатии на хэштег переход на страницу категории beauty не производится
-    https://github.com/ksenrika/qa-engineer-project-84/blob/main/Screenshots/bug4.png
+    https://github.com/ksenrika/qa-engineer-project-84/blob/main/Screenshots/bugreports/bug4.png
 
 - summary: | # New
     Посмотреть подробную информацию о товаре можно при нажатии за рамкой карточки товара
@@ -172,7 +172,7 @@
     Пользователь успешно перешел на страницу товара Sports Sneakers Off White & Red путем нажатия на картинку товара или его описание
   actual-result: |
     Переход на страницу товара происходит при нажатии части, выходящей за рамку карточки товрара Sports Sneakers Off White & Red
-    https://github.com/ksenrika/qa-engineer-project-84/blob/main/Screenshots/bug6.png
+    https://github.com/ksenrika/qa-engineer-project-84/blob/main/Screenshots/bugreports/bug6.png
 
 - summary: | # New
     Не отправляется запрос на сервер при выборе категории товаров
@@ -189,7 +189,7 @@
     В Network должен отобразиться GET-запрос на выбор категории со статусом 200
   actual-result: |
     В Network не отображается GET-запрос на выбор категории
-    https://github.com/ksenrika/qa-engineer-project-84/blob/main/Screenshots/bug8.png
+    https://github.com/ksenrika/qa-engineer-project-84/blob/main/Screenshots/bugreports/bug8.png
 
 - summary: | # New
     Не отправляется запрос на сервер при добавлении товара в корзину
@@ -206,7 +206,7 @@
     В Network должен отобразиться POST-запрос на добавление товара в корзину со статусом 200
   actual-result: |
     В Network не отображается POST-запрос на добавление товара в корзину
-    https://github.com/ksenrika/qa-engineer-project-84/blob/main/Screenshots/bug9.png
+    https://github.com/ksenrika/qa-engineer-project-84/blob/main/Screenshots/bugreports/bug9.png
 
 - summary: | # New
     Отправляется запрос на сервер при оформлении заказа со статусом 500
@@ -225,7 +225,7 @@
     В Network должен отобразиться POST-запрос об оформлении заказа со статусом 200
   actual-result: |
     В Network отображается POST-запрос на добавление товара в корзину со статусом 500
-    https://github.com/ksenrika/qa-engineer-project-84/blob/main/Screenshots/bug10.png
+    https://github.com/ksenrika/qa-engineer-project-84/blob/main/Screenshots/bugreports/bug10.png
 
 - summary: | # New
     Не отправляется запрос на сервер при удалении товара из корзины
@@ -244,8 +244,8 @@
     В Network должен отобразиться POST-запрос с действием удаления со статусом 200
   actual-result: |
     В Network не отображается POST-запрос с действием удаления товара из корзины
-    https://github.com/ksenrika/qa-engineer-project-84/blob/main/Screenshots/bug_11-1.png
-    https://github.com/ksenrika/qa-engineer-project-84/blob/main/Screenshots/bug_11-2.png
+    https://github.com/ksenrika/qa-engineer-project-84/blob/main/Screenshots/bugreports/bug_11-1.png
+    https://github.com/ksenrika/qa-engineer-project-84/blob/main/Screenshots/bugreports/bug_11-2.png
 
 - summary: | # New
     Не отправляется запрос на сервер при фильтрации товаров по бренду 
@@ -262,7 +262,7 @@
     В Network должен отобразиться GET-запрос на выбор товаров с брендом Chanel и статусом 200
   actual-result: |
     В Network не отображается GET-запрос на выбор бренда Chanel
-    https://github.com/ksenrika/qa-engineer-project-84/blob/main/Screenshots/bug12.png
+    https://github.com/ksenrika/qa-engineer-project-84/blob/main/Screenshots/bugreports/bug12.png
 
 - summary: | # New
     Отправляется запрос на сервер при переходе на карточку товара со статусом 304
@@ -279,4 +279,24 @@
     В Network должен отобразиться GET-запрос о переходе на карточку товара Powder Canister и статусом 200
   actual-result: |
     В Network отображается GET-запрос на выбор бренда Chanel со статусом 304
-    https://github.com/ksenrika/qa-engineer-project-84/blob/main/Screenshots/bug13.png
+    https://github.com/ksenrika/qa-engineer-project-84/blob/main/Screenshots/bugreports/bug13.png
+
+- summary: | # New
+    Не выравниваются значения товаров при добавлении разных товаров в корзину
+  environment: |
+    Firefox   142.0.1 (64-битная)
+    Windows 10
+  steps-to-reproduce: |
+    1. Зайти на сайт магазина https://products-store-ru.hexlet.app
+    2. Найти в каталоге товар Apple и Red Lipstick
+    3. Нажать на кнопку Add to cart и добавить товар Red Lipstick в корзину
+    4. Нажать на кнопку Add to cart и добавить товар Apple в корзину
+    5. Нажать на кнопку Cart и перейти в корзину
+  expected-result: |
+    Пользователь успешно перешел в корзину и увидел отображение количества товара в магазине,
+    количество, положенных в корзину единиц товара, цену со скидной и без неё и кнопку Delete.
+    Все значения должны быть выровненны по ширине
+  actual-result: |
+    Значения количества товара в магазине и количество, положенных в корзину единиц товара не выровнены по ширине
+    https://github.com/ksenrika/qa-engineer-project-84/blob/main/Screenshots/bugreports/bug20.png
+
