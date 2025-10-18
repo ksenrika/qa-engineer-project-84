@@ -24,7 +24,7 @@
   status: pass
 
 - summary: |
-    Фильтрация товаров по скидочной цене
+    Фильтрация товаров по цене
   status: fail
 
 - summary: | # New
