@@ -64,22 +64,6 @@
     https://github.com/ksenrika/qa-engineer-project-84/blob/main/Screenshots/bugreports/screen4.png
 
 - summary: |
-    При нажатии на кнопку Next, категория в фильтре не сбрасывается
-  environment: |
-    Firefox   142.0.1 (64-битная)
-    Windows 10
-  steps-to-reproduce: |
-    1. Зайти на сайт магазина https://products-store-ru.hexlet.app
-    2. Выбрать категорию из списка (beauty)
-    3. Нажать на кнопку Next
-  expected-result: |
-    При нажатии на кнопку Next, категория beauty в фильтре должна сброситься, чтобы выбрать уже новую категорию
-  actual-result: |
-    При нажатии на кнопку Next, категория beauty в фильтре не сбрасывается
-    https://github.com/ksenrika/qa-engineer-project-84/blob/main/Screenshots/bugreports/bug17.png
-    https://github.com/ksenrika/qa-engineer-project-84/blob/main/Screenshots/bugreports/bug17-1.png
-
-- summary: |
     В каталоге товаров не выводится рейтинг товара
   environment: |
     Firefox   142.0.1 (64-битная)
@@ -299,4 +283,20 @@
   actual-result: |
     Значения количества товара в магазине и количество, положенных в корзину единиц товара не выровнены по ширине
     https://github.com/ksenrika/qa-engineer-project-84/blob/main/Screenshots/bugreports/bug20.png
+
+- summary: | # New
+    При нажатии на кнопку Next, категория в фильтре не сбрасывается
+  environment: |
+    Firefox   142.0.1 (64-битная)
+    Windows 10
+  steps-to-reproduce: |
+    1. Зайти на сайт магазина https://products-store-ru.hexlet.app
+    2. Выбрать категорию из списка (fragrances)
+    3. Нажать на кнопку Next
+  expected-result: |
+    При нажатии на кнопку Next, категория fragrances в фильтре должна сброситься, чтобы выбрать уже новую категорию
+  actual-result: |
+    При нажатии на кнопку Next, категория fragrances в фильтре не сбрасывается
+    https://github.com/ksenrika/qa-engineer-project-84/blob/main/Screenshots/bugreports/bug17.png
+    https://github.com/ksenrika/qa-engineer-project-84/blob/main/Screenshots/bugreports/bug17-1.png
 
